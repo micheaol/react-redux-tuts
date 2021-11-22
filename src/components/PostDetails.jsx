@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 
-export class PostDetails extends Component {
+class PostDetails extends Component {
     render() {
+        const {post} = this.props;
         return (
+            
             <div className="col s12 m6">
+                
                 <div className="card">
                     <div className="card-content">
+                        
                         <span className="card-title">
-                            Post one
+                            {post.title}
                         </span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias id ex labore?</p>
+                        <p>{post.content}</p>
                     </div>
                     <div className="card-action">
                         <button className="btn black">Delete</button>

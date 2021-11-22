@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 class AddPost extends Component {
     render() {
         return (
-            <div className="container">
-                <div className="blue-text center-align">
+            <div className="container" style={{margin: '4rem auto' }}>
+                <h5 className="blue-text center-align">
                     MicheaolBlog
-                </div>
+                </h5>
                 <form >
                     <div className="input-field">
                         <label htmlFor="post-title">Title</label>
